@@ -1,0 +1,11 @@
+{
+    "blog": 0,
+    "caption": 1,
+    "corpus": 2,
+    "dialogue": 3,
+    "generation": 4,
+    "instruction": 5,
+    "news": 6,
+    "sns": 7,
+    "story": 8
+}

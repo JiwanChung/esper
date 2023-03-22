@@ -1,0 +1,34 @@
+name: ppo
+channels:
+  - pytorch
+  - anaconda
+  - defaults
+dependencies:
+  - cudatoolkit=11.3
+  - jupyterlab
+  - matplotlib
+  - more-itertools
+  - pip
+  - python=3.9
+  - pytorch=1.11.0
+  - pyyaml
+  - scikit-learn
+  - scipy
+  - six
+  - pip:
+    - tqdm
+    - ftfy
+    - regex
+    - huggingface-hub
+    - ipdb
+    - toml
+    - torchvision
+    - tensorboard
+    - transformers
+    - git+https://github.com/openai/CLIP.git
+    - pytorch_lightning
+    - spacy
+    - pycocoevalcap
+    - deepspeed
+    - pandas
+prefix: /home/ximinglu/anaconda3/envs/ppo

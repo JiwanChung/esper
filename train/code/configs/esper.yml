@@ -1,0 +1,28 @@
+fix_gpt: True
+ref_model: gpt2
+init_model: gpt2
+sent_init_path: ../../assets/sent_init.json
+use_coco_eval: True
+use_deepspeed: True
+log_interval: 2
+save_interval: 1024  # * self.hparams.nminibatches * self.hparams.num_gpus
+eval_interval: 512  # * self.hparams.nminibatches * self.hparams.num_gpus
+warmup_steps: 100
+supervise_kl: 0.1
+supervise_kl_coef: 1
+kl_type: kl_without_sampling
+disable_auto_resume: False
+use_only_kl_until: 50
+use_ref_gen_until: 50
+use_entropy_loss: True
+entropy_threshold: 70
+repetition_penalty: 0.025
+use_gpt_tok_for_rp: True
+entropy_reward_threshold: 70
+entropy_reward_coef: 0.1
+entropy_reward_bias: 3.0
+repetition_penalty: 0.025
+do_not_use_goal_before: 50  # resume
+no_repeat_ngram_size: 3
+disable_dropout: True
+unfix_value_model: True

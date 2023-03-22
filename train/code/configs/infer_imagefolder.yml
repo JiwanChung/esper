@@ -1,0 +1,7 @@
+use_label_prefix: True
+checkpoint: ../data/log/ppo/esper_domain/lightning_logs/version_0/checkpoints/last.ckpt
+response_length: 20
+fixed_prompt: 'caption:'
+infer_no_repeat_size: 2
+infer_dir: ../data/coco/images/val2014
+infer_out_path: ../data/temp/out.json

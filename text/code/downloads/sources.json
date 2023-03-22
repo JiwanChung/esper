@@ -1,0 +1,16 @@
+{
+    "blog": ["https://huggingface.co/datasets/blog_authorship_corpus/blob/main/blog_authorship_corpus.py"],
+    "sns": [
+        "https://github.com/karansikka1/documentIntent_emnlp19",
+        "https://raw.githubusercontent.com/cardiffnlp/tweeteval/main/datasets/emotion",
+        "http://help.sentiment140.com/for-students/",
+    ],
+    "instruction": ["https://github.com/mahnazkoupaee/WikiHow-Dataset"],
+    "story": [
+        "https://github.com/snigdhac/StoryComprehension_EMNLP/blob/master/Dataset/RoCStories/",
+        "https://github.com/qkaren/Counterfactual-StoryRW"
+    ],
+    "news": [
+        "https://github.com/furkanbiten/GoodNews"
+    ]
+}
