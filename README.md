@@ -17,6 +17,8 @@ ESP is a new dataset with focus on providing ***multiple styled text targets for
 We release ESP dataset in `/data/dataset_v_0_2.json`.
 The images of ESP dataset is a subset of the [COCO 2014 dataset](https://cocodataset.org/#home) validation split.
 
+![image](assets/figure_esp.png)
+
 An example from the dataset is as following:
 
 ```
