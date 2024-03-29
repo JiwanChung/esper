@@ -47,6 +47,7 @@ class ClipCocoCollator:
         features = None
         if 'feature' in sequences[0]:
             features = [sequence['feature'] for sequence in sequences]
+            features = [torch.from_numpy(feature) if not torch.is_tensor(feature) else feature for feature in features]
             features = torch.stack(features, dim=0)
         if 'image' in sequences[0]:
             images = [sequence['image'] for sequence in sequences]
