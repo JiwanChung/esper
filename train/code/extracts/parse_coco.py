@@ -187,5 +187,7 @@ def run_split(clip_model_type: str, split: str, image_dir, out_path, num_gpus, d
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--clip_model_type', default="ViT-B/32", choices=('RN50', 'RN101', 'RN50x4', 'ViT-B/32'))
+    parser.add_argument('--data_dir', default="./data", type=str)
     args = parser.parse_args()
-    exit(main(args.clip_model_type))
+    root = Path(args.data_dir)
+    exit(main(root, args.clip_model_type))
